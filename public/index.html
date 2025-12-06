@@ -18,7 +18,14 @@
 
         <div class="layout">
             <div class="board-section">
-                <div id="board" class="board"></div>
+                <!-- <div id="board" class="board"></div> -->
+                 <div id="myBoard" style="width: 400px"></div>
+                <label>Status:</label>
+                <div id="status"></div>
+                <label>FEN:</label>
+                <div id="fen"></div>
+                <label>PGN:</label>
+                <div id="pgn"></div>
             </div>
 
             <div class="side-panel">
@@ -38,10 +45,11 @@
                     <textarea id="opening-input" placeholder="e.g., 1. e4 e5 2. Nf3 Nc6 3. Bb5"></textarea>
                     <button onclick="loadOpening()">Load Opening</button>
                     <div id="opening-status" class="status-message"></div>
-                </div>
+                </div>  
             </div>
         </div>
     </div>
-    <script src = './app.js'></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src = './app.js' ></script>
 </body>
 </html>

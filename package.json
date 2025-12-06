@@ -2,7 +2,7 @@
   "name": "chess-opening-learner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,14 +13,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Eshaan111/Chess-Opening-Learner/issues"
   },
   "homepage": "https://github.com/Eshaan111/Chess-Opening-Learner#readme",
   "dependencies": {
+    "@chrisoakman/chessboardjs": "^1.0.0",
+    "chess.js": "^1.4.0",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "jquery": "^3.7.1",
     "nodemon": "^3.1.11"
   }
 }

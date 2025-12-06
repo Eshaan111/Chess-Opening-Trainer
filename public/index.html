@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Opening Learner</title>
+    <link rel="stylesheet" href='./styles.css'>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>♟️ Chess Opening Learner</h1>
+            <div class="mode-buttons">
+                <button class="mode-btn active" data-mode="play">Play Moves</button>
+                <button class="mode-btn" data-mode="opening">Learn Opening</button>
+            </div>
+        </header>
+
+        <div class="layout">
+            <div class="board-section">
+                <div id="board" class="board"></div>
+            </div>
+
+            <div class="side-panel">
+                <div id="play-panel" class="panel active">
+                    <h2>Play Mode</h2>
+                    <p>Drag pieces across the board. Explore your own moves freely.</p>
+                    <button onclick="resetBoard()">Reset Board</button>
+                    <div id="play-moves" class="move-list hidden">
+                        <strong>Moves:</strong>
+                        <div id="play-moves-list"></div>
+                    </div>
+                </div>
+
+                <div id="opening-panel" class="panel">
+                    <h2>Learn Opening</h2>
+                    <label for="opening-input">Paste opening moves:</label>
+                    <textarea id="opening-input" placeholder="e.g., 1. e4 e5 2. Nf3 Nc6 3. Bb5"></textarea>
+                    <button onclick="loadOpening()">Load Opening</button>
+                    <div id="opening-status" class="status-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = './app.js'></script>
+</body>
+</html>

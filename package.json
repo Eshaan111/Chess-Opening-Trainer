@@ -1,0 +1,26 @@
+{
+  "name": "chess-opening-learner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eshaan111/Chess-Opening-Learner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Eshaan111/Chess-Opening-Learner/issues"
+  },
+  "homepage": "https://github.com/Eshaan111/Chess-Opening-Learner#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
